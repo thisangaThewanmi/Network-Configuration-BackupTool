@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="726.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Page1Controller">
+   <children>
+      <JFXButton fx:id="btnBackupAnExsisting" layoutX="148.0" layoutY="56.0" onAction="#btnBackupAnExsitingOnClick" prefHeight="33.0" prefWidth="177.0" style="-fx-background-color: #E3A5C7;" text="Bckup an Exsisting " />
+      <JFXButton fx:id="btnBackupAnew" layoutX="569.0" layoutY="56.0" onAction="#btnBackupAnewOnClick" opacity="0.83" prefHeight="33.0" prefWidth="177.0" style="-fx-background-color: #B692C2;" text="Back up A new " />
+      <Text layoutX="35.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the device Type" wrappingWidth="201.6708984375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="511.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the device " wrappingWidth="160.00000631809235">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbDeviceType" layoutX="250.0" layoutY="130.0" onMouseClicked="#cmbDeviceTypeOnClick" prefWidth="150.0" />
+      <ComboBox fx:id="cmbDevice" layoutX="683.0" layoutY="130.0" onMouseClicked="#cmbDeviceOnClick" prefWidth="150.0" />
+      <AnchorPane layoutX="14.0" layoutY="273.0" prefHeight="442.0" prefWidth="825.0" style="-fx-background-color: #FFDFD6;">
+         <children>
+            <Text layoutX="28.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Router" wrappingWidth="176.9999948143959">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="28.0" layoutY="112.0" prefHeight="141.0" prefWidth="136.0" style="-fx-background-color: #EF5A6F;" />
+            <TextField fx:id="txtHostNmae" layoutX="219.0" layoutY="343.0" prefHeight="31.0" prefWidth="257.0" />
+            <TextField fx:id="txtIpAdd" layoutX="205.0" layoutY="174.0" prefHeight="31.0" prefWidth="257.0" />
+            <TextField fx:id="txtSubnetMask" layoutX="219.0" layoutY="253.0" prefHeight="31.0" prefWidth="257.0" />
+            <ComboBox fx:id="cmbPort" layoutX="210.0" layoutY="81.0" prefHeight="31.0" prefWidth="250.0" />
+            <TextField fx:id="txtDate" layoutX="550.0" layoutY="248.0" prefHeight="31.0" prefWidth="238.0" />
+            <TextField fx:id="txtRouterTime" layoutX="550.0" layoutY="167.0" prefHeight="31.0" prefWidth="238.0" />
+            <Text layoutX="219.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PORT" />
+            <Text layoutX="210.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IPaDDRESS" />
+            <Text layoutX="210.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sUBNETmASK" />
+            <Text layoutX="219.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hOSTnAME" />
+            <Text layoutX="557.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rOUTERtIME" />
+            <Text layoutX="550.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dATE" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnBackup" layoutX="207.0" layoutY="212.0" mnemonicParsing="false" onAction="#btnBackupOnclick" prefHeight="28.0" prefWidth="160.0" text="Backup" />
+      <Button fx:id="btnScheduleBackup" layoutX="532.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnSheduleBackupOnClick" prefHeight="28.0" prefWidth="160.0" text="SHEDUKEbACKUP" />
+   </children>
+</AnchorPane>

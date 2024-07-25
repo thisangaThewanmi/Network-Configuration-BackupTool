@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="640.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Page3Controller">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="27.0" prefHeight="587.0" prefWidth="241.0" style="-fx-background-color: #E3A5C7;">
+         <children>
+            <ComboBox fx:id="cmbBackupStatus" layoutX="13.0" layoutY="106.0" onMouseClicked="#cmbBackupStatusOnAction" prefHeight="31.0" prefWidth="207.0" promptText="BackupStatus" />
+            <ComboBox fx:id="cmbDeviceTypes" layoutX="16.0" layoutY="189.0" onMouseClicked="#cmbDeviceTypesOnAction" prefHeight="31.0" prefWidth="214.0" promptText="DeviceType" />
+            <ComboBox fx:id="cmbDevice" layoutX="16.0" layoutY="284.0" onMouseClicked="#cmbDeviceOnAction" prefHeight="31.0" prefWidth="214.0" promptText="Device" />
+            <ComboBox fx:id="cmbBackupType" layoutX="16.0" layoutY="368.0" onMouseClicked="#cmbBackupTypeOnAction" prefHeight="31.0" prefWidth="214.0" promptText="BackupType" />
+            <JFXButton fx:id="btnNext" layoutX="135.0" layoutY="481.0" onAction="#btnNextOnAction" prefHeight="28.0" prefWidth="104.0" text="Next  &gt;&gt;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ConfPane" layoutX="280.0" layoutY="27.0" prefHeight="587.0" prefWidth="686.0" />
+
+   </children>
+</AnchorPane>

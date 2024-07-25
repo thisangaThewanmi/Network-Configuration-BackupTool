@@ -35,7 +35,7 @@
             <TextField fx:id="txtHostNmae" layoutX="219.0" layoutY="343.0" prefHeight="31.0" prefWidth="257.0" />
             <TextField fx:id="txtIpAdd" layoutX="205.0" layoutY="174.0" prefHeight="31.0" prefWidth="257.0" />
             <TextField fx:id="txtSubnetMask" layoutX="219.0" layoutY="253.0" prefHeight="31.0" prefWidth="257.0" />
-            <ComboBox fx:id="cmbPort" layoutX="210.0" layoutY="81.0" prefHeight="31.0" prefWidth="250.0" />
+            <ComboBox fx:id="cmbPort" layoutX="210.0" layoutY="81.0" onMouseClicked="#cmbPortOnAction" prefHeight="31.0" prefWidth="250.0" />
             <TextField fx:id="txtDate" layoutX="550.0" layoutY="248.0" prefHeight="31.0" prefWidth="238.0" />
             <TextField fx:id="txtRouterTime" layoutX="550.0" layoutY="167.0" prefHeight="31.0" prefWidth="238.0" />
             <Text layoutX="219.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PORT" />

@@ -14,7 +14,7 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent node = FXMLLoader.load(getClass().getResource("/veiw/Page1.fxml"));
+        Parent node = FXMLLoader.load(getClass().getResource("/veiw/Page3.fxml"));
 
         Scene scene = new Scene(node);
         stage.setScene(scene);

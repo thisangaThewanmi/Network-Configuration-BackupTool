@@ -25,6 +25,7 @@ public class Page1Controller {
     public  Button btnBackup;
 
     private   boolean isButtonClicked = false;
+    private  boolean isButtonBackupTypeClicked = false;
 
 
 
@@ -63,14 +64,30 @@ public class Page1Controller {
     }
 
     public void btnBackupOnclick(ActionEvent actionEvent) {
+        isButtonBackupTypeClicked = true;
         String BackupType= btnBackup.getId(); // Get the ID of the button
         System.out.println("Button ID: " + BackupType); // Prin
     }
 
     public void btnSheduleBackupOnClick(ActionEvent actionEvent) {
-
+        isButtonBackupTypeClicked = true;
         String btnBackup = btnScheduleBackup.getId(); // Get the ID of the button
         System.out.println("Button ID: " + btnBackup); // Prin
+    }
+
+    public void cmbPortOnAction(MouseEvent mouseEvent) {
+        if(isButtonClicked){
+            loadcmbPorts();
+        }else{
+            new Alert(Alert.AlertType.ERROR,"Select A BackupType First :(").show();
+        }
+
+    }
+
+    private void loadcmbPorts() {
+        System.out.println("load cmbDeviceType called");
+        cmbPort.getItems().clear();
+        cmbPort.getItems().addAll("FastEthernet 0/0","FastEthernet 0/1","FastEthernet 0/2");
     }
 }
 

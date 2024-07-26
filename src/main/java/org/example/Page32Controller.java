@@ -46,11 +46,20 @@ public class Page32Controller {
         pstm.setString(6,router.getSubnetMask());
 
         if(pstm.executeUpdate()>0){
-            new Alert(Alert.AlertType.CONFIRMATION,"Saved to Database");
+            new Alert(Alert.AlertType.CONFIRMATION,"Saved to Database").show();
         }else{
-            new Alert(Alert.AlertType.ERROR,"Error occored :(");
+            new Alert(Alert.AlertType.ERROR,"Error occored :(").show();
         }
 
+
         System.out.println(router);
+
+        cmbPorts.setValue(null);
+        txtDate.clear();
+        txtHostName.clear();
+        txtTime.clear();
+        txtIpAdd.clear();
+        txtSubnetMask.clear();
     }
+
 }

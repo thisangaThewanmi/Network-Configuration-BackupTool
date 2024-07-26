@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="587.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Page33Controller">
+
+
+
+    <AnchorPane prefHeight="587.0" prefWidth="687.0" style="-fx-background-color: #E3A5C7;">
+        <children>
+            <Label layoutX="27.0" layoutY="30.0" prefHeight="31.0" prefWidth="228.0" text="Router Configuration">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+
+            <AnchorPane layoutX="27.0" layoutY="88.0" prefHeight="168.0" prefWidth="167.0" style="-fx-background-color: #694F8E;" />
+            <JFXButton layoutX="255.0" layoutY="61.0" prefHeight="28.0" prefWidth="104.0" text="Ports" />
+            <JFXButton layoutX="59.0" layoutY="278.0" prefHeight="28.0" prefWidth="104.0" text="Next  &gt;&gt;" />
+            <JFXButton layoutX="59.0" layoutY="309.0" prefHeight="28.0" prefWidth="104.0" text="Next  &gt;&gt;" />
+            <JFXButton layoutX="59.0" layoutY="351.0" prefHeight="28.0" prefWidth="104.0" text="Next  &gt;&gt;" />
+            <JFXButton layoutX="59.0" layoutY="389.0" prefHeight="28.0" prefWidth="104.0" text="Next  &gt;&gt;" />
+            <TextField fx:id="txtHostName" layoutX="251.0" layoutY="169.0" prefHeight="31.0" prefWidth="272.0" />
+            <TextField fx:id="txtTime" layoutX="251.0" layoutY="240.0" prefHeight="31.0" prefWidth="272.0" />
+            <TextField fx:id="txtDate" layoutX="255.0" layoutY="316.0" prefHeight="31.0" prefWidth="272.0" />
+            <TextField fx:id="txtIpAdd" layoutX="255.0" layoutY="392.0" prefHeight="31.0" prefWidth="272.0" />
+            <TextField fx:id="txtSubnetMask" layoutX="255.0" layoutY="474.0" prefHeight="31.0" prefWidth="272.0" />
+            <ComboBox fx:id="cmbPorts" layoutX="254.0" layoutY="96.0" onMouseClicked="#cmbPortsOnAction" prefHeight="31.0" prefWidth="266.0" />
+            <JFXButton layoutX="298.0" layoutY="534.0" prefHeight="31.0" prefWidth="154.0" text="Back" />
+            <JFXButton fx:id="btnFinish" layoutX="481.0" layoutY="534.0" onAction="#btnFinishOnAction" prefHeight="31.0" prefWidth="154.0" text="Finish" />
+            <JFXButton layoutX="255.0" layoutY="138.0" prefHeight="28.0" prefWidth="104.0" text="HostName" />
+            <JFXButton layoutX="227.0" layoutY="209.0" prefHeight="28.0" prefWidth="104.0" text="Time" />
+            <JFXButton layoutX="246.0" layoutY="278.0" prefHeight="31.0" prefWidth="66.0" text="Date" />
+            <JFXButton layoutX="255.0" layoutY="366.0" prefHeight="28.0" prefWidth="104.0" text="IpAddress" />
+            <JFXButton layoutX="255.0" layoutY="444.0" prefHeight="28.0" prefWidth="104.0" text="SubnetMask" />
+         <TextField fx:id="txtTimeStamp" layoutX="50.0" layoutY="474.0" prefHeight="31.0" prefWidth="139.0" />
+         <JFXButton layoutX="50.0" layoutY="437.0" prefHeight="28.0" prefWidth="104.0" text="TimeStamp" />
+        </children>
+    </AnchorPane>
+</AnchorPane>

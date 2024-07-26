@@ -66,13 +66,19 @@ public class Page3Controller {
         selectedDevice = cmbDevice.getValue();
         selectedBackupType = cmbBackupType.getValue();
 
-        Parent node = FXMLLoader.load(this.getClass().getResource("/veiw/Page32.fxml"));
+        Parent node = FXMLLoader.load(this.getClass().getResource("/veiw/Page33.fxml"));
 
             this.ConfPane.getChildren().clear();
             this.ConfPane.getChildren().add(node);
 
+            cmbBackupType.setValue(null);
+            cmbDeviceTypes.setValue(null);
+            cmbBackupStatus.setValue(null);
+            cmbDevice.setValue(null);
 
     }
+
+
 
   /*   public void loadComboBox(List<String> list, ComboBox<String> comboBox) {
         System.out.println("load cmbDeviceType called");

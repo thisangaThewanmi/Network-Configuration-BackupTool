@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3f1bd1c-dd18-4c57-838d-a6acc7dd1c36" name="Changes" comment="Creating the controller class">
+    <list default="true" id="b3f1bd1c-dd18-4c57-838d-a6acc7dd1c36" name="Changes" comment="impplemented the Database connectivity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Page32Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Page32Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Page3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Page3Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Router.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,8 @@
       <workItem from="1721833557626" duration="992000" />
       <workItem from="1721897721702" duration="37000" />
       <workItem from="1721897813593" duration="23000" />
-      <workItem from="1721897859441" duration="6231000" />
+      <workItem from="1721897859441" duration="8621000" />
+      <workItem from="1721979121004" duration="4145000" />
     </task>
     <task id="LOCAL-00001" summary="Created UI">
       <option name="closed" value="true" />
@@ -122,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721833850820</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="impplemented the Database connectivity">
+      <option name="closed" value="true" />
+      <created>1721929183824</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721929183825</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +143,7 @@
     <MESSAGE value="Created UI" />
     <MESSAGE value="Created Launcher and LauncherWrapper" />
     <MESSAGE value="Creating the controller class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating the controller class" />
+    <MESSAGE value="impplemented the Database connectivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="impplemented the Database connectivity" />
   </component>
 </project>
